@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import TeamPage from "./TeamPage";
 
 const HomePage = ({ isLoggedIn, user, handleLogout }) => {
   return (
@@ -18,6 +19,7 @@ const HomePage = ({ isLoggedIn, user, handleLogout }) => {
       ) : (
         <button onClick={handleLogout}>Logout</button>
       )}
+      <TeamPage></TeamPage>
     </div>
   );
 };
